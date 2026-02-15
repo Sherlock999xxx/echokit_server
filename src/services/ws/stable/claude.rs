@@ -340,8 +340,6 @@ impl RunSessionState {
                 match self.wait_input(asr_session).await {
                     Ok(text) => {
                         let _ = self.send_input(&text).await;
-                        tokio::time::sleep(std::time::Duration::from_millis(300)).await;
-                        let _ = self.send_confirm().await;
                         self.cc_session.state = cc_session::ClaudeCodeState::Idle;
                     }
                     Err(e) => {
