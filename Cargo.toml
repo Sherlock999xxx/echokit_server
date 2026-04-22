@@ -30,7 +30,7 @@ opus = "0.3.0"
 
 lip_sync = { version = "0.1", git = "https://github.com/L-jasmine/lip_sync.git" }
 
-rand = "0.9.0"
+rand = "0.9.3"
 uuid = { version = "1.14", features = [
     "v4",       # Lets you generate random UUIDs
     "v5",       # Lets you generate namespace-based UUIDs
